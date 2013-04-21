@@ -1,0 +1,1 @@
+reverse           (list)         => reversed listcut_entry         (entry,list)   => list with instinces of entry removeda = args[1];b = args[2];c = {};for d in (b)  if (d != a)    c = {@c,d};  endif  $command_utils:suspend_if_needed(1);endforreturn(c);

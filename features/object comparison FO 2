@@ -1,0 +1,1 @@
+@prog #19603:match_verbif (length(args) > 2)  return(0);elseif (args[1] != STR)  return(0);elseif (args[2] != STR)  return(0);elseif (args[1] == args[2])  return(1);endifverba = $string_utils:explode(args[1]);verbb = $string_utils:explode(args[2]);for verb1 in (verba)  for verb2 in (verbb)    if (verb1 == verb2)      return 1;    endif  endforendforreturn 0;.
